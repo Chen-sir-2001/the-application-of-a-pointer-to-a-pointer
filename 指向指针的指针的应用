@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+    char *name[] = {"fishc.com","www.fishc.com","home.fishc.com","fishc.com/dz"};
+    char  **p;
+    int i;
+    for(i = 0; i < 4; i++){
+        p = name + i;
+        printf("%s\n",*p);
+    }
+}
